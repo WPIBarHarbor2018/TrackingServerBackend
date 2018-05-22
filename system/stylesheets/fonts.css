@@ -1,0 +1,83 @@
+/* Custom Fonts loaded from Server */
+
+/* Didact Gothic: Our Primary Text Block Font */
+@font-face {
+    font-family: "Didact Gothic";
+    src: url(/system/fonts/Didact_Gothic/DidactGothic-Regular.ttf);
+	font-weight: 400;
+}
+
+/* Mina: Our Secondary Font */
+@font-face {
+    font-family: "Mina";
+    src: url(/system/fonts/Mina/Mina-Regular.ttf);
+	font-weight: 400;
+}
+
+/*@font-face {
+    font-family: "Mina";
+    src: url(/system/fonts/Mina/Mina-Bold.ttf);
+	font-weight: 700;
+}*/
+
+/* Slabo 13px: Our Serif Font */
+@font-face {
+    font-family: "Slabo 13px";
+    src: url(/system/fonts/Slabo_13px/Slabo13px-Regular.ttf);
+	font-weight: 400;
+}
+
+/* Work Sans: General Font */
+/*@font-face {
+    font-family: "Work Sans";
+    src: url(/system/fonts/Work_Sans/WorkSans-Thin.ttf);
+	font-weight: 100;
+}*/
+
+@font-face {
+    font-family: "Work Sans";
+    src: url(/system/fonts/Work_Sans/WorkSans-ExtraLight.ttf);
+	font-weight: 200;
+}
+
+@font-face {
+    font-family: "Work Sans";
+    src: url(/system/fonts/Work_Sans/WorkSans-Light.ttf);
+	font-weight: 300;
+}
+
+@font-face {
+    font-family: "Work Sans";
+    src: url(/system/fonts/Work_Sans/WorkSans-Regular.ttf);
+	font-weight: 400;
+}
+
+/*@font-face {
+    font-family: "Work Sans";
+    src: url(/system/fonts/Work_Sans/WorkSans-Medium.ttf);
+	font-weight: 500;
+}
+
+@font-face {
+    font-family: "Work Sans";
+    src: url(/system/fonts/Work_Sans/WorkSans-SemiBold.ttf);
+	font-weight: 600;
+}
+
+@font-face {
+    font-family: "Work Sans";
+    src: url(/system/fonts/Work_Sans/WorkSans-Bold.ttf);
+	font-weight: 700;
+}
+
+@font-face {
+    font-family: "Work Sans";
+    src: url(/system/fonts/Work_Sans/WorkSans-ExtraBold.ttf);
+	font-weight: 800;
+}
+
+@font-face {
+    font-family: "Work Sans";
+    src: url(/system/fonts/Work_Sans/WorkSans-Black.ttf);
+	font-weight: 900;
+}*/
