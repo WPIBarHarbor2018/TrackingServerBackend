@@ -1,0 +1,25 @@
+div {
+	background-color: white;
+
+	font-family: Mina;
+
+	width: 700px;
+
+	margin-left: auto;
+	margin-right: auto;
+
+	border-radius: 2px;
+	padding: 20px;
+}
+
+#code.error {
+	font-family: "Work Sans";
+	font-weight: 100;
+	font-size: 80px;
+}
+
+#name.error {
+	font-family: "Work Sans";
+	font-weight: 100;
+	font-size: 40px;
+}
