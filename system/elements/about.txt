@@ -1,0 +1,10 @@
+~~~
+Custom Elements
+~~~
+
+Each element should have a CSS file named style.css to serve as the main CSS
+file for the element. Additionally, a JavaScript file script.js must be
+included. If there is no JavaScript code or no CSS markup, leave the file empty.
+If you do not create the file at all, there will be a background 404 when the
+browser attempts to load the resource. This won't detract from user experience
+but is undesired. We don't want to allow errors just because no one will notice.

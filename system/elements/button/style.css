@@ -1,0 +1,162 @@
+/* Copied from Google Developers Console for the buttons used there*/
+.clean-button, a.clean-button:link, a.clean-button:visited {
+	-webkit-user-select: none;
+	user-select: none;
+
+	background-color: White;
+	background-image: -webkit-linear-gradient(top, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.0196078));
+	background-repeat: no-repeat;
+
+	border: 1px solid #D3D3D3;
+	border-radius: 2px;
+
+	color: rgb(66, 66, 66);
+	cursor: pointer;
+
+	font-family: "Didact Gothic", sans-serif;
+	font-size: 14px;
+	font-style: normal;
+	font-weight: normal;
+
+	/* height: 24px; */
+	letter-spacing: 0.12px;
+	line-height: 24px;
+
+	outline-color: #424242;
+	outline-style: none;
+	outline-width: 0px;
+
+	padding-bottom: 0px;
+	padding-left: 6.9px;
+	padding-right: 6.9px;
+	padding-top: 0px;
+
+	position: relative;
+
+	text-align: center;
+
+	text-decoration: none;
+	text-transform: none;
+
+	vertical-align: middle;
+	white-space: nowrap;
+
+	-webkit-transition: 200ms ease;
+	-moz-transition: 200ms ease;
+	-ms-transition: 200ms ease;
+	-o-transition: 200ms ease;
+	transition: 200ms ease;
+}
+
+a.clean-button:link, a.clean-button:visited, a.clean-button:hover, a.clean-button:active {
+	padding-top: 3px;
+	padding-bottom: 3px;
+}
+
+.clean-button:hover, a.clean-button:hover {
+	box-shadow: 0 1px 5px rgba(0, 0, 0, 0.12);
+
+	border: 1px solid #D3D3D3;
+
+	-webkit-transition: 200ms ease;
+	-moz-transition: 200ms ease;
+	-ms-transition: 200ms ease;
+	-o-transition: 200ms ease;
+	transition: 200ms ease;
+}
+
+.clean-button:active, a.clean-button:active {
+	border: 1px solid #4184f3;
+
+	box-shadow: none;
+
+	background-color: #F7F7F7;
+
+	-webkit-transition: 200ms ease;
+	-moz-transition: 200ms ease;
+	-ms-transition: 200ms ease;
+	-o-transition: 200ms ease;
+	transition: 200ms ease;
+}
+
+.green.clean-button {
+	color: #20CFB8 !IMPORTANT;
+}
+
+#green.clean-button:active, #green.clean-button.active, .green.clean-button:active {
+	border-color: #20CFB8;
+}
+
+.red.clean-button{
+	color: #FF6666 !IMPORTANT;
+}
+
+.red.clean-button:active {
+	border-color: #FF6666;
+	color: #FF6666;
+}
+
+.red.clean-button.selected:active, .red.clean-button.selected:hover, .red.clean-button.selected {
+	color: #FF6666;
+	border: 1px solid #FF6666;
+	box-shadow: none;
+	background-color: #F7F7F7;
+
+	pointer-events: none;
+	cursor: default;
+}
+
+.green.clean-button.selected:active, .green.clean-button.selected:hover, .green.clean-button.selected {
+	color: #20CFB8;
+	border: 1px solid #20CFB8;
+	box-shadow: none;
+	background-color: #F7F7F7;
+
+	pointer-events: none;
+	cursor: default;
+}
+
+#red.clean-button:active, #red.clean-button.active {
+	border-color: #FF6666;
+}
+
+.clean-button.active, a.clean-button.active {
+	border: 1px solid #4184f3;
+
+	box-shadow: none;
+	cursor: default;
+
+	background-color: #F7F7F7;
+
+	-webkit-transition: 200ms ease;
+	-moz-transition: 200ms ease;
+	-ms-transition: 200ms ease;
+	-o-transition: 200ms ease;
+	transition: 200ms ease;
+}
+
+.red.clean-button.active, a.clean-button.active.red {
+	border: 1px solid #FF6666;
+}
+
+.green.clean-button.active, a.clean-button.active.green {
+	border: 1px solid #20CFB8;
+}
+
+.clean-button.disabled, a.clean-button.disabled {
+	pointer-events: none !IMPORTANT;
+	border: 1px solid #D3D3D3 !IMPORTANT;
+
+	color: Gray !IMPORTANT;
+
+	box-shadow: none !IMPORTANT;
+	cursor: default !IMPORTANT;
+
+	background-color: LightGray !IMPORTANT;
+
+	-webkit-transition: 200ms ease;
+	-moz-transition: 200ms ease;
+	-ms-transition: 200ms ease;
+	-o-transition: 200ms ease;
+	transition: 200ms ease;
+}

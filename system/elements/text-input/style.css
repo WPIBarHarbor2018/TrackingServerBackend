@@ -1,0 +1,77 @@
+.input-group {
+	position: relative;
+	transition: font-size 0.2s ease;
+	font-family: "Didact Gothic";
+	padding-top: 20px;
+	margin-top: 20px;
+}
+
+.input-group:after {
+	content: "";
+	display: table;
+	clear: both;
+}
+
+.input-group input {
+	border: none;
+	border-bottom: solid 1px #aaa;
+	width: 100%;
+	/*padding: 10px 0;*/
+	transition: border-color 0.2s ease, box-shadow 0.2s ease;
+	font-family: "Didact Gothic";
+	font-size: 16px;
+	font-weight: 300;
+}
+
+.input-group input:focus {
+	outline: none;
+	border-color: #AC2B37;
+	box-shadow: 0 1px 0 0 #AC2B37;
+}
+
+.input-group.disabled input,
+.input-group.disabled input:focus {
+	color: #CCC;
+	background-color: white;
+	border-color: #CCC;
+	transition: none;
+}
+
+.input-group label {
+	position: absolute;
+	top: 20px; /*30px*/
+	left: 0;
+	color: #777;
+	font-family: "Didact Gothic";
+	font-weight: 300;
+	transition: transform 0.2s ease, color 0.2s ease;
+}
+
+.input-group.disabled label {
+	color: #CCC;
+	transition: none;
+}
+
+.input-group label:hover {
+	cursor: text;
+}
+
+.input-group.disabled,
+.input-group.disabled label:hover,
+.input-group.disabled input {
+	cursor: not-allowed;
+}
+
+.input-group input:focus + label {
+	color: #AC2B37;
+}
+
+.input-group input:focus + label,
+.input-group input.active + label {
+	transform: translateY(-20px);
+}
+
+.input-group.disabled input:focus + label,
+.input-group.disabled input.active + label {
+	transform: none;
+}

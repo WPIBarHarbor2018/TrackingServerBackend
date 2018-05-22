@@ -1,0 +1,54 @@
+.input-group {
+	position: relative;
+	transition: font-size 0.2s ease;
+	font-family: "Didact Gothic";
+	padding-top: 20px;
+	margin-top: 20px;
+}
+
+.input-group:after {
+	content: "";
+	display: table;
+	clear: both;
+}
+
+.input-group textarea {
+	border: solid 1px #aaa;
+	transition: border-color 0.2s ease, box-shadow 0.2s ease;
+	font-family: "Didact Gothic";
+	font-size: 16px;
+	font-weight: 500;
+
+	min-width: 300px;
+	padding: 4px;
+}
+
+.input-group textarea:focus {
+	outline: none;
+	padding: 3px;
+	border-width: 2px;
+	border-color: #AC2B37;
+}
+
+.input-group #textarealabel {
+	padding-left: 4px;
+    position: absolute;
+    top: 22px;
+	left: 0;
+	color: #777;
+	font-weight: 300;
+	transition: transform 0.2s ease, color 0.2s ease;
+}
+
+.input-group #textarealabel:hover {
+	cursor: text;
+}
+
+.input-group textarea:focus + #textarealabel {
+	color: #AC2B37;
+}
+
+.input-group textarea:focus + #textarealabel,
+.input-group textarea.active + #textarealabel {
+	transform: translateY(-25px);
+}
