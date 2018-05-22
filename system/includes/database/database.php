@@ -40,7 +40,7 @@
 		$latitude	= $bhiqp_db->sanitize($_latitude);
 		$longitude	= $bhiqp_db->sanitize($_longitude);
 
-		$db->query("INSERT INTO .......");
+		$bhiqp_db->query("INSERT INTO `gps-data` (`uuid`, `latitude`, `longitude`, `timestamp`) VALUES ('$id', $latitude, $longitude, $timestamp)");
 	}
 
 ?>
