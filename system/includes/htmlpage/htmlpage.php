@@ -9,7 +9,7 @@
 	class HTMLPage {
 		// page configuration
 		private $post_title = " | Acadia Visitor Tracking";
-		private $icon = "bhvt.ico";
+		private $icon = "bhiqp.ico";
 		private $title = "";
 		private $page_headers = "";
 		private $onload = "";
