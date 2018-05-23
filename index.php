@@ -12,7 +12,7 @@
 	$page->document_start();
 
 	// set variable background
-	$bkg = "bkg7";
+	$bkg = "bkg" . random_int(1, 9);
  ?>
 
  <!-- page content -->
@@ -28,14 +28,16 @@
 		<h3>Admin Console</h3>
 
 		<div class='side_bar main_item sect_0'>BHIQP-VT-2018</div>
-			<a class='side_bar sub_item' href="#/">Admin Dashboard</a>
-			<a class='side_bar sub_item' href="#/data">View Raw Data</a>
-			<a class='side_bar sub_item' href="#/keys">View Device Keys</a>
-			<a class='side_bar sub_item' href="#/test">System Test</a>
-			<a class='side_bar sub_item' href="#/conf">Configuration</a>
+			<a class='side_bar sub_item' href="#/"><i class="material-icons button-icon">dashboard</i>&nbsp;&nbsp;Admin Dashboard</a>
+			<a class='side_bar sub_item' href="#/data"><i class="material-icons button-icon">pin_drop</i>&nbsp;&nbsp;View Raw Data</a>
+			<a class='side_bar sub_item' href="#/keys"><i class="material-icons button-icon">phonelink_lock</i>&nbsp;&nbsp;View Device Keys</a>
+			<a class='side_bar sub_item' href="#/test"><i class="material-icons button-icon">assignment</i>&nbsp;&nbsp;System Test</a>
+			<a class='side_bar sub_item' href="#/conf"><i class="material-icons button-icon">settings</i>&nbsp;&nbsp;Configuration</a>
+			<a class='side_bar sub_item' href="#/logs"><i class="material-icons button-icon">receipt</i>&nbsp;&nbsp;Logs</a>
+			<a class='side_bar sub_item' href="/phpmyadmin"><i class="material-icons button-icon">storage</i>&nbsp;&nbsp;Database</a>
 		</div>
 	</div>
-	
+
 	<div id='main_content_box'>
 		<div class='content_card'>
 			<h3 class='content_title'>System</h3>
