@@ -7,19 +7,6 @@
 	font-weight: 400;
 }
 
-/* Mina: Our Secondary Font */
-@font-face {
-    font-family: "Mina";
-    src: url(/system/fonts/Mina/Mina-Regular.ttf);
-	font-weight: 400;
-}
-
-/*@font-face {
-    font-family: "Mina";
-    src: url(/system/fonts/Mina/Mina-Bold.ttf);
-	font-weight: 700;
-}*/
-
 /* Slabo 13px: Our Serif Font */
 @font-face {
     font-family: "Slabo 13px";
