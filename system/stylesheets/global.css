@@ -1,0 +1,143 @@
+/* ~~~ Global Styling ~~~ */
+
+/* ---------- Core Formatting ----------*/
+
+::selection {
+    background-color: #71E9FFB3;
+    color: white;
+}
+
+::-moz-selection {
+    background-color: #71E9FFB3;
+    color: white;
+}
+
+/* ---------- Page Styling/Elements ----------*/
+
+.notification {
+	position: fixed;
+	bottom: -80px;
+	left: 20px;
+
+	background: Gray;
+	color: white;
+
+	font-family: "Work Sans";
+	font-weight: 300;
+
+	padding: 10px;
+
+	border: 1px solid Gray;
+	border-radius: 2px;
+
+	box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.14), 0 1px 5px 0 rgba(0, 0, 0, 0.12), 0 3px 1px -2px rgba(0, 0, 0, 0.2);
+}
+
+.note {
+	font-family: "Didact Gothic";
+	font-style: italic;
+	font-size: 14px;
+	color: lightgray;
+}
+
+.warning {
+	font-family: "Didact Gothic";
+	font-style: italic;
+	font-size: 16px;
+	color: #FF6666;
+}
+
+.warning_box {
+	background-color: #FA4834;
+	color: white;
+
+    padding: 8px;
+    padding-left: 10px;
+    border-radius: 3px;
+}
+
+/* ---------- Text Headers ---------- */
+
+h1 {
+	font-family: "Slabo 13px";
+	font-weight: 300;
+    margin-top: 0px;
+}
+
+h2 {
+	font-family: "Slabo 13px";
+	font-weight: 400;
+
+	border-bottom: solid 1px LightGray;
+}
+
+h3 {
+	font-family: "Slabo 13px";
+	font-weight: 100;
+}
+
+h4 {
+	font-family: "Work Sans";
+	font-weight: 100;
+
+	margin-bottom: 0px;
+}
+
+.header_no_margin { margin: 0px; }
+
+/* ---------- Other Sections ---------- */
+
+p {
+	font-family: "Didact Gothic";
+	font-weight: 400;
+}
+
+/* Normal Links */
+
+a.link:link {
+	color: #FFB300;
+
+	-webkit-transition: 300ms ease;
+	-moz-transition: 300ms ease;
+	-ms-transition: 300ms ease;
+	-o-transition: 300ms ease;
+	transition: 300ms ease;
+
+	text-decoration: none;
+}
+
+a.link:visited {
+	color: #FFB300;
+
+	-webkit-transition: 300ms ease;
+	-moz-transition: 300ms ease;
+	-ms-transition: 300ms ease;
+	-o-transition: 300ms ease;
+	transition: 300ms ease;
+
+	text-decoration: none;
+}
+
+a.link:hover {
+    color: #FF9800;
+
+	-webkit-transition: 300ms ease;
+	-moz-transition: 300ms ease;
+	-ms-transition: 300ms ease;
+	-o-transition: 300ms ease;
+	transition: 300ms ease;
+
+	text-decoration: underline;
+}
+
+a.link:active {
+    color: #046dfb; /* #8BC34A greenish */
+
+	-webkit-transition: 300ms ease;
+	-moz-transition: 300ms ease;
+	-ms-transition: 300ms ease;
+	-o-transition: 300ms ease;
+	transition: 300ms ease;
+
+	text-decoration: underline;
+}
