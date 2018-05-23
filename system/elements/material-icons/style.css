@@ -39,6 +39,8 @@
 	font-feature-settings: 'liga';
 }
 
-.material-icons.medium-icon {
+.material-icons.button-icon {
 	font-size: 18px;
+	position: relative;
+	top: 3px;
 }
