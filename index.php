@@ -30,15 +30,12 @@
 		<div class='side_bar main_item sect_0'>BHIQP-VT-2018</div>
 			<a class='side_bar sub_item' href="#/">Admin Dashboard</a>
 			<a class='side_bar sub_item' href="#/data">View Raw Data</a>
-			<a class='side_bar sub_item' href="#/keys">View User Keys</a>
+			<a class='side_bar sub_item' href="#/keys">View Device Keys</a>
 			<a class='side_bar sub_item' href="#/test">System Test</a>
 			<a class='side_bar sub_item' href="#/conf">Configuration</a>
-<!--
-		<div class='side_bar main_item sect_1'>Projects</div>
-			<a class='side_bar sub_item' href="/projects#add">New Project</a>
-			<a class='side_bar sub_item' href="/projects">Manage Projects</a> -->
+		</div>
 	</div>
-
+	
 	<div id='main_content_box'>
 		<div class='content_card'>
 			<h3 class='content_title'>System</h3>
@@ -78,13 +75,14 @@ echo "<p>Reverse proxy server response time is <b>" . pingDomain($_SERVER['REMOT
 echo "<p>Internet response time is <b>" . pingDomain("1.1.1.1") . " ms</b></p>";
 
 			 ?>
-			 <a class='clean-button' href='#/conf'><i class="material-icons button-icon">refresh</i></a>
+			 <button class='clean-button' onclick='refreshSystem()'><i class="material-icons button-icon">refresh</i></button>
 			 <a class='clean-button' href='#/conf'>Configuration</a>
 		</div>
 		<div class='content_card'>
 			<h3 class='content_title'>Devices</h3>
 			<p><b>0</b> active devices in the last 24 hours.</p>
 			<p><b>0</b> authorized devices.</p>
+			<button class='clean-button' onclick='refreshDevices()'><i class="material-icons button-icon">refresh</i></button>
 			<a class='clean-button' href='#/keys'>View Devices</a>
 		</div>
 		<div class='content_card'>
@@ -92,6 +90,7 @@ echo "<p>Internet response time is <b>" . pingDomain("1.1.1.1") . " ms</b></p>";
 			<p>Date and time of start of colelction is <b>null</b>.</p>
 			<p><b>0</b> GPS data points collected.</p>
 			<p><b>0</b> unique paths collected.</p>
+			<button class='clean-button' onclick='refreshData()'><i class="material-icons button-icon">refresh</i></button>
 			<a class='clean-button' href='#/data'>View Data</a>
 		</div>
 	</div>
