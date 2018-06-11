@@ -1,0 +1,37 @@
+<div class='content_card_full'>
+	<h2 class='content_title'>System Testing</h2>
+	<h3>Test Key Creation</h3>
+	<button class='clean-button' onclick='newTestKey()'><i class="material-icons button-icon">vpn_key</i>&nbsp;New Test Key</button>
+
+	<h3>Test Data Creation</h3>
+	<p>Create test coordinate data. Timestamp is optional as it will be set to the current time if not specified. Please use signed degrees format for latitude and longitude.</p>
+	<div class="c-dropdown js-dropdown" style='width:330px;'>
+		<input type="hidden" name="uuid" id="uuid" class="js-dropdown__input">
+		<label for='uuid'>Test Key</label>
+		<span class="c-button c-button--dropdown js-dropdown__current">Select Test Key</span>
+		<ul class="c-dropdown__list">
+			<li id="mqp-select" class="c-dropdown__item" data-dropdown-value="mqp">1546058f-5a25-4334-85ae-e68f2a44bbaf</li>
+			<li id="iqp-select" class="c-dropdown__item" data-dropdown-value="iqp">1546058f-5a25-4334-85ae-e68f2a44bbaf</li>
+			<li id="grad-select" class="c-dropdown__item" data-dropdown-value="grad-research">1546058f-5a25-4334-85ae-e68f2a44bbaf</li>
+			<li id="course-select" class="c-dropdown__item" data-dropdown-value="course-proj">1546058f-5a25-4334-85ae-e68f2a44bbaf</li>
+		</ul>
+	</div>
+	<div class='input-group' style='width:200px;display:inline-block;'>
+		<input id='latitude' type='text' class='m-input' value=''/>
+		<label for='latitude'>Latitude</label>
+	</div>
+	<div class='input-group' style='width:200px;display:inline-block;'>
+		<input id='longitude' type='text' class='m-input' value=''/>
+		<label for='longitude'>Longitude</label>
+	</div>
+	<div class='input-group' style='width:200px;display:inline-block;'>
+		<input id='timestamp' type='text' class='m-input' value=''/>
+		<label for='timestamp'>Timestamp (optional)</label>
+	</div>
+</div>
+<div class='content_card'>
+	<h3 class='content_title'>Test Keys</h3>
+</div>
+<div class='content_card'>
+	<h3 class='content_title'>Test Data</h3>
+</div>

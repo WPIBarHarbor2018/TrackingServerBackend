@@ -59,22 +59,6 @@ body {
 	text-shadow: 1px 1px 10px black;
 }
 
-/*#header_left {
-	flex-grow: 1;
-	flex-basis: 0;
-	font-size: 15px;
-	text-align: left;
-	padding-left: 10px;
-}
-
-#header_right {
-	flex-grow: 1;
-	flex-basis: 0;
-	font-size: 15px;
-	text-align: right;
-	padding-right: 10px;
-}*/
-
 /* Content Boxes and Content */
 
 #main_content_box {
@@ -103,6 +87,21 @@ body {
 }
 
 .content_card {
+	background-color: #fff9;
+
+	border-radius: 2px;
+
+	box-shadow: 0 2px 0 0 #e5e5e599;
+
+	margin: 20px;
+	padding: 20px;
+
+	z-index: 2;
+}
+
+.content_card_full {
+	width: 100%;
+
 	background-color: #fff9;
 
 	border-radius: 2px;
