@@ -3,7 +3,7 @@
 	transition: font-size 0.2s ease;
 	font-family: "Didact Gothic";
 	padding-top: 20px;
-	margin-top: 20px;
+	/*margin-top: 20px;*/
 }
 
 .input-group:after {
@@ -14,19 +14,20 @@
 
 .input-group input {
 	border: none;
-	border-bottom: solid 1px #aaa;
+	border-bottom: solid 1px #444;
 	width: 100%;
 	/*padding: 10px 0;*/
 	transition: border-color 0.2s ease, box-shadow 0.2s ease;
 	font-family: "Didact Gothic";
 	font-size: 16px;
 	font-weight: 300;
+	background-color: #0000;
 }
 
 .input-group input:focus {
 	outline: none;
-	border-color: #AC2B37;
-	box-shadow: 0 1px 0 0 #AC2B37;
+	border-color: #00d2ff;
+	box-shadow: 0 1px 0 0 #00d2ff;
 }
 
 .input-group.disabled input,
@@ -41,7 +42,7 @@
 	position: absolute;
 	top: 20px; /*30px*/
 	left: 0;
-	color: #777;
+	color: #333;
 	font-family: "Didact Gothic";
 	font-weight: 300;
 	transition: transform 0.2s ease, color 0.2s ease;
@@ -63,7 +64,7 @@
 }
 
 .input-group input:focus + label {
-	color: #AC2B37;
+	color: #00d2ff;
 }
 
 .input-group input:focus + label,

@@ -8,6 +8,15 @@ html {
   -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
 }
 
+.c-dropdown.js-dropdown label {
+	color: #333;
+	font-family: "Didact Gothic";
+	font-weight: 300;
+	position: relative;
+	display: block;
+	padding-bottom: 5px;
+}
+
 /**
  * Component: Dropdown
  * --------------------------------------------------
@@ -16,11 +25,13 @@ html {
 	position: relative;
 	display: inline-block;
 	text-align: left;
+	margin: 8px 0px;
+	margin-bottom: 2px;
 }
 
 .c-dropdown__list {
 	box-sizing: border-box;
-	z-index: 1;
+	z-index: 3;
 	margin: 5px 0 0 0;
 	padding: 6px 0;
 	list-style: none;
@@ -33,7 +44,7 @@ html {
 	opacity: 0;
 	visibility: hidden;
 	border-radius: 3px;
-	background: #D6DCE4CC;
+	background: #FFF9;
 	transition: opacity .25s linear, top .25s linear;
 }
 
@@ -49,7 +60,7 @@ html {
 	font-size: 14px;
 	line-height: 20px;
 	cursor: pointer;
-	color: #434A54;
+	color: #444;
 	white-space: nowrap;
 	overflow: hidden;
 	text-overflow: ellipsis;
@@ -57,7 +68,7 @@ html {
 }
 
 .c-dropdown__item:hover {
-	background-color: #EBEFF5;
+	background-color: #EEE9;
 }
 
 /**
@@ -98,28 +109,28 @@ html {
  */
 .c-button--dropdown {
 	box-sizing: border-box;
-	padding: 6px 34px 6px 12px;
-	background-color: #fff;
-	color: #777;
+	padding: 4px 34px 4px 10px;
+	/*background-color: #fff;*/
+	color: #333;
 	font-size: 14px;
 	line-height: 20px;
-	min-height: 32px;
-	border: 1px solid #aaa;
+	min-height: 28px;
+	border: 1px solid #333;
 	border-radius: 3px;
 	transition: background-color .2s linear;
 }
 
 .c-button--dropdown:hover {
-	background-color: #D6DCE4;
+	background-color: #eaeaea;
 }
 
 .c-button--dropdown:after {
 	content: "";
 	position: absolute;
-	top: 14px;
+	top: 39px;
 	right: 11px;
 	width: 0;
 	height: 0;
 	border: 5px solid transparent;
-	border-top-color: #777;
+	border-top-color: #333;
 }
