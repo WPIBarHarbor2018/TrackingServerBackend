@@ -4,6 +4,7 @@
 
 	$page = new HTMLPage('Home');
 	$page->include_system_script("background-resize", "ui");
+	$page->include_system_script("index", "async");
 	$page->include_system_stylesheet("bkgnd");
 	$page->import_element("button");
 	$page->import_element("material-icons");
@@ -41,16 +42,17 @@
 	<div id='main_content_box'>
 		<div class='content_card'>
 			<h3 class='content_title'>System</h3>
-			<?php
-				$uptime = get_uptime();
-				echo "<p>Server uptime is <b>{$uptime['days']}:{$uptime['hours']}:{$uptime['mins']}:{$uptime['secs']}</b></p>";
-				echo "<p>Server hostname is <b>" . gethostname() . "</b></p>";
-				echo "<p>Server IP is <b>{$_SERVER['SERVER_ADDR']}</b></p>";
-				echo "<p>Reverse proxy server IP is <b>{$_SERVER['REMOTE_ADDR']}</b></p>";
-				echo "<p>Reverse proxy server response time is <b>" . ping_domain($_SERVER['REMOTE_ADDR']) . " ms</b></p>";
-				echo "<p>Internet response time is <b>" . ping_domain("1.1.1.1") . " ms</b></p>";
-
-			 ?>
+			<div id='system_data'>
+				<?php
+					$uptime = get_uptime();
+					echo "<p>Server uptime is <b>{$uptime['days']}:{$uptime['hours']}:{$uptime['mins']}:{$uptime['secs']}</b></p>";
+					echo "<p>Server hostname is <b>" . gethostname() . "</b></p>";
+					echo "<p>Server IP is <b>{$_SERVER['SERVER_ADDR']}</b></p>";
+					echo "<p>Reverse proxy server IP is <b>{$_SERVER['REMOTE_ADDR']}</b></p>";
+					echo "<p>Reverse proxy server response time is <b>" . ping_domain($_SERVER['REMOTE_ADDR']) . " ms</b></p>";
+					echo "<p>Internet response time is <b>" . ping_domain("1.1.1.1") . " ms</b></p>";
+				 ?>
+		 	</div>
 			 <button class='clean-button' onclick='refreshSystem()'><i class="material-icons button-icon">refresh</i></button>
 			 <a class='clean-button' href='#/conf'>Configuration</a>
 		</div>
