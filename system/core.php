@@ -71,11 +71,11 @@
 	function get_uptime() {
 		$str   = @file_get_contents('/proc/uptime');
 		$num   = floatval($str);
-		$secs  = (int) fmod($num, 60);
+		$secs  = sprintf('%02d', (int) fmod($num, 60));
 		$num   = intdiv($num, 60);
-		$mins  = $num % 60;
+		$mins  = sprintf('%02d', $num % 60);
 		$num   = intdiv($num, 60);
-		$hours = $num % 24;
+		$hours = sprintf('%02d', $num % 24);
 		$num   = intdiv($num, 24);
 		$days  = $num;
 
