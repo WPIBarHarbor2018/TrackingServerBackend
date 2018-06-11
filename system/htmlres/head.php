@@ -1,3 +1,6 @@
+<?php header("Access-Control-Allow-Origin: *");header("Access-Control-Allow-Methods: GET, POST");
+header("Access-Control-Allow-Headers: *"); ?>
+
 <head>
 	<meta charset="UTF-8">
 	<meta http-equiv="content-type" content="text/html; charset=UTF-8">
@@ -6,6 +9,7 @@
 	<title><?php echo $this->title; ?></title>
 
 	<!-- Icon -->
+	<!-- Icon credits to Nick Roach http://www.elegantthemes.com/ -->
 	<link rel="shortcut icon" href="/system/media/icons/ico/<?php echo $this->icon ?>"/>
 
 	<!-- Global Stylesheets -->
