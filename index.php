@@ -34,7 +34,7 @@
 			<a class='side_bar sub_item' href="#/test"><i class="material-icons button-icon">assignment</i>&nbsp;&nbsp;System Test</a>
 			<a class='side_bar sub_item' href="#/conf"><i class="material-icons button-icon">settings</i>&nbsp;&nbsp;Configuration</a>
 			<a class='side_bar sub_item' href="#/logs"><i class="material-icons button-icon">receipt</i>&nbsp;&nbsp;Logs</a>
-			<a class='side_bar sub_item' href="/phpmyadmin"><i class="material-icons button-icon">storage</i>&nbsp;&nbsp;Database</a>
+			<a class='side_bar sub_item' href="/phpmyadmin/index.php"><i class="material-icons button-icon">storage</i>&nbsp;&nbsp;Database</a>
 		</div>
 	</div>
 
@@ -42,39 +42,13 @@
 		<div class='content_card'>
 			<h3 class='content_title'>System</h3>
 			<?php
-				$str   = @file_get_contents('/proc/uptime');
-				$num   = floatval($str);
-				$secs  = (int)fmod($num, 60);
-				$num   = intdiv($num, 60);
-				$mins  = $num % 60;
-				$num   = intdiv($num, 60);
-				$hours = $num % 24;
-				$num   = intdiv($num, 24);
-				$days  = $num;
-				echo "<p>Server uptime is <b>$days:$hours:$mins:$secs</b></p>";
-				echo "<p>Virtual server hostname is <b>" . gethostbyaddr($_SERVER['SERVER_ADDR']) . "</b></p>";
-				echo "<p>Virtual server IP is <b>{$_SERVER['SERVER_ADDR']}</b></p>";
+				$uptime = get_uptime();
+				echo "<p>Server uptime is <b>{$uptime['days']}:{$uptime['hours']}:{$uptime['mins']}:{$uptime['secs']}</b></p>";
+				echo "<p>Server hostname is <b>" . gethostname() . "</b></p>";
+				echo "<p>Server IP is <b>{$_SERVER['SERVER_ADDR']}</b></p>";
 				echo "<p>Reverse proxy server IP is <b>{$_SERVER['REMOTE_ADDR']}</b></p>";
-
-				// Function to check response time
-function pingDomain($domain){
-    $starttime = microtime(true);
-    $file      = fsockopen ($domain, 80, $errno, $errstr, 10);
-    $stoptime  = microtime(true);
-    $status    = 0;
-
-    if (!$file) $status = -1;  // Site is down
-    else {
-        fclose($file);
-        $status = ($stoptime - $starttime) * 1000;
-        $status = floor($status);
-    }
-    return $status;
-}
-
-
-echo "<p>Reverse proxy server response time is <b>" . pingDomain($_SERVER['REMOTE_ADDR']) . " ms</b></p>";
-echo "<p>Internet response time is <b>" . pingDomain("1.1.1.1") . " ms</b></p>";
+				echo "<p>Reverse proxy server response time is <b>" . ping_domain($_SERVER['REMOTE_ADDR']) . " ms</b></p>";
+				echo "<p>Internet response time is <b>" . ping_domain("1.1.1.1") . " ms</b></p>";
 
 			 ?>
 			 <button class='clean-button' onclick='refreshSystem()'><i class="material-icons button-icon">refresh</i></button>

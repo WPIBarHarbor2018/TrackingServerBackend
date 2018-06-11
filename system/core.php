@@ -44,4 +44,44 @@
 
 		return $string;
 	}
+
+	/*
+		'Ping' a domain on port 80 and get response time.
+		https://stackoverflow.com/questions/9841635/how-can-i-ping-a-server-port-with-php#9843251
+	*/
+	function ping_domain($domain) {
+		$starttime = microtime(true);
+		$file      = fsockopen ($domain, 80, $errno, $errstr, 10);
+		$stoptime  = microtime(true);
+		$status    = -1;
+
+		if ($file) {
+			// if response response
+			fclose($file);
+			$status = ($stoptime - $starttime) * 1000;
+			$status = floor($status);
+		}
+
+		return $status;
+	}
+
+	/*
+		Get server uptime.
+	*/
+	function get_uptime() {
+		$str   = @file_get_contents('/proc/uptime');
+		$num   = floatval($str);
+		$secs  = (int) fmod($num, 60);
+		$num   = intdiv($num, 60);
+		$mins  = $num % 60;
+		$num   = intdiv($num, 60);
+		$hours = $num % 24;
+		$num   = intdiv($num, 24);
+		$days  = $num;
+
+		return array('days'  => $days,
+				     'hours' => $hours,
+				     'mins'  => $mins,
+				     'secs'  => $secs);
+	}
 ?>
