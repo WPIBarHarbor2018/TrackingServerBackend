@@ -55,12 +55,13 @@ html {
 }
 
 .c-dropdown__item {
+	z-index: 3;
 	box-sizing: border-box;
 	padding: 6px 12px;
 	font-size: 14px;
 	line-height: 20px;
 	cursor: pointer;
-	color: #444;
+	color: #222;
 	white-space: nowrap;
 	overflow: hidden;
 	text-overflow: ellipsis;

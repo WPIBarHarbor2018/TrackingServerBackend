@@ -37,6 +37,8 @@
 			<a id='data_tab' class='side_bar sub_item' href="#/data"><i class="material-icons button-icon">pin_drop</i>&nbsp;&nbsp;View Raw Data</a>
 			<a id='keys_tab' class='side_bar sub_item' href="#/keys"><i class="material-icons button-icon">phonelink_lock</i>&nbsp;&nbsp;View Device Keys</a>
 			<a id='test_tab' class='side_bar sub_item' href="#/test"><i class="material-icons button-icon">assignment</i>&nbsp;&nbsp;System Test</a>
+			<a id='testdata_tab' class='side_bar sub_item' href="#/testdata"><i class="material-icons button-icon">assignment_late</i>&nbsp;&nbsp;View Test Data</a>
+			<a id='testkeys_tab' class='side_bar sub_item' href="#/testkeys"><i class="material-icons button-icon">developer_mode</i>&nbsp;&nbsp;View Test Keys</a>
 			<a id='conf_tab' class='side_bar sub_item' href="#/conf"><i class="material-icons button-icon">settings</i>&nbsp;&nbsp;Configuration</a>
 			<a id='logs_tab' class='side_bar sub_item' href="#/logs"><i class="material-icons button-icon">receipt</i>&nbsp;&nbsp;Logs</a>
 			<a class='side_bar sub_item' href="https://aether.ky8.io/phpMyAdmin/index.php"><i class="material-icons button-icon">storage</i>&nbsp;&nbsp;Database</a>
