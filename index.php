@@ -34,7 +34,7 @@
 			<a class='side_bar sub_item' href="#/test"><i class="material-icons button-icon">assignment</i>&nbsp;&nbsp;System Test</a>
 			<a class='side_bar sub_item' href="#/conf"><i class="material-icons button-icon">settings</i>&nbsp;&nbsp;Configuration</a>
 			<a class='side_bar sub_item' href="#/logs"><i class="material-icons button-icon">receipt</i>&nbsp;&nbsp;Logs</a>
-			<a class='side_bar sub_item' href="/phpmyadmin/index.php"><i class="material-icons button-icon">storage</i>&nbsp;&nbsp;Database</a>
+			<a class='side_bar sub_item' href="https://aether.ky8.io/phpMyAdmin/index.php"><i class="material-icons button-icon">storage</i>&nbsp;&nbsp;Database</a>
 		</div>
 	</div>
 
