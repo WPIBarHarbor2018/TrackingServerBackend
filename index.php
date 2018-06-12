@@ -6,6 +6,7 @@
 	$page->include_system_script("background-resize", "ui");
 	$page->include_system_script("index", "async");
 	$page->include_system_script("nav", "async");
+	$page->include_system_script("test", "async");
 	$page->include_system_stylesheet("bkgnd");
 	$page->import_element("button");
 	$page->import_element("loading");
