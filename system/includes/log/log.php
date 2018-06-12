@@ -6,10 +6,15 @@
 
 	require_once($_SERVER['DOCUMENT_ROOT'] . '/system/core.php');
 	require_once('event.php');
+	_include('database');
 
 	function write_log($event){
 		// get global config info
 		global $_CONFIG;
+
+		// database connection
+		global $bhiqp_db;
+		sql_connect();
 
 		// get data from event
 		$type = $event->get_type();
@@ -35,6 +40,10 @@
 		fwrite($file, $log_text);
 
 		fclose($file);
+
+		// try to insert this into the error log database
+		// if the error is database connection this won't work, but we will still have local error logs
+		$bhiqp_db->query("INSERT INTO `logs` (`time`,`type`,`origin`,`message`,`errno`) VALUES ('$date','$type','{$event->get_origin()}','{$event->get_message()}','{$event->get_errno()}')");
 	}
 
     function log_system_event($origin, $message) {
@@ -55,10 +64,6 @@
 
     function log_login_event($origin, $message) {
 		write_log(new Event(time(), "login", $origin, $message));
-	}
-
-    function log_mail_event($origin, $message) {
-		write_log(new Event(time(), "mail", $origin, $message));
 	}
 
     function log_error($origin, $errno, $message) {
