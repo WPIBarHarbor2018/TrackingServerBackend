@@ -77,7 +77,7 @@ function loadSubpage(page_name, id = 0) {
 	xhr.done(function (new_page_data) {
 		container.fadeOut(100);
 
-		setTimeout(function(){
+		setTimeout(function () {
 			container.html(new_page_data);
 			setupInputs();
 			// setupTextAreaInputs();
